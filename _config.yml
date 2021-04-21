@@ -1,1 +1,4 @@
 title: "The Small Booklet Of Causality Examples"
+parse:
+  myst_enable_extensions:
+    - amsmath
