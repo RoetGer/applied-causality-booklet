@@ -40,5 +40,6 @@ import statsmodels.api as sm
 from graphviz import Digraph
 
 plt.rc('figure', figsize=(15, 10))
+plt.rc('font', size=16);
 -------------------
 
