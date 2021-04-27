@@ -49,6 +49,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Introduction" href="intro_book.html" />
@@ -264,77 +266,57 @@
 
 <span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\stats\__init__.py in &lt;module&gt;
 <span class="g g-Whitespace">    </span><span class="mi">389</span> 
-<span class="g g-Whitespace">    </span><span class="mi">390</span> <span class="sd">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">391</span><span class="sd"> from .stats import *</span>
-<span class="g g-Whitespace">    </span><span class="mi">392</span><span class="sd"> from .distributions import *</span>
-<span class="g g-Whitespace">    </span><span class="mi">393</span><span class="sd"> from .morestats import *</span>
+<span class="g g-Whitespace">    </span><span class="mi">390</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">391</span><span class="s2"> from .stats import *</span>
+<span class="g g-Whitespace">    </span><span class="mi">392</span><span class="s2"> from .distributions import *</span>
+<span class="g g-Whitespace">    </span><span class="mi">393</span><span class="s2"> from .morestats import *</span>
 
 <span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\stats\stats.py in &lt;module&gt;
-<span class="g g-Whitespace">    </span><span class="mi">178</span><span class="sd"> import scipy.special as special</span>
-<span class="g g-Whitespace">    </span><span class="mi">179</span><span class="sd"> from scipy import linalg</span>
-<span class="ne">--&gt; </span><span class="mi">180</span><span class="sd"> from . import distributions</span>
-<span class="g g-Whitespace">    </span><span class="mi">181</span><span class="sd"> from . import mstats_basic</span>
-<span class="g g-Whitespace">    </span><span class="mi">182</span><span class="sd"> from ._stats_mstats_common import (_find_repeats, linregress, theilslopes,</span>
+<span class="g g-Whitespace">    </span><span class="mi">178</span><span class="s2"> import scipy.special as special</span>
+<span class="g g-Whitespace">    </span><span class="mi">179</span><span class="s2"> from scipy import linalg</span>
+<span class="ne">--&gt; </span><span class="mi">180</span><span class="s2"> from . import distributions</span>
+<span class="g g-Whitespace">    </span><span class="mi">181</span><span class="s2"> from . import mstats_basic</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span><span class="s2"> from ._stats_mstats_common import (_find_repeats, linregress, theilslopes,</span>
 
 <span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\stats\distributions.py in &lt;module&gt;
-<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="sd"> #       instead of `git blame -Lxxx,+x`.</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="sd"> #</span>
-<span class="ne">----&gt; </span><span class="mi">8</span><span class="sd"> from ._distn_infrastructure import (entropy, rv_discrete, rv_continuous,</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="sd">                                     rv_frozen)</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span><span class="sd"> </span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> #       instead of `git blame -Lxxx,+x`.</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> #</span>
+<span class="ne">----&gt; </span><span class="mi">8</span><span class="s2"> from ._distn_infrastructure import (entropy, rv_discrete, rv_continuous,</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s2">                                     rv_frozen)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span><span class="s2"> </span>
 
 <span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\stats\_distn_infrastructure.py in &lt;module&gt;
-<span class="g g-Whitespace">     </span><span class="mi">21</span><span class="sd"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">22</span><span class="sd"> # for root finding for continuous distribution ppf, and max likelihood estimation</span>
-<span class="ne">---&gt; </span><span class="mi">23</span><span class="sd"> from scipy import optimize</span>
-<span class="g g-Whitespace">     </span><span class="mi">24</span><span class="sd"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">25</span><span class="sd"> # for functions of continuous distributions (e.g. moments, entropy, cdf)</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span><span class="s2"> # for root finding for continuous distribution ppf, and max likelihood estimation</span>
+<span class="ne">---&gt; </span><span class="mi">23</span><span class="s2"> from scipy import optimize</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span><span class="s2"> # for functions of continuous distributions (e.g. moments, entropy, cdf)</span>
 
 <span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\optimize\__init__.py in &lt;module&gt;
-<span class="g g-Whitespace">    </span><span class="mi">400</span><span class="sd"> from .optimize import *</span>
-<span class="g g-Whitespace">    </span><span class="mi">401</span><span class="sd"> from ._minimize import *</span>
-<span class="ne">--&gt; </span><span class="mi">402</span><span class="sd"> from ._root import *</span>
-<span class="g g-Whitespace">    </span><span class="mi">403</span><span class="sd"> from ._root_scalar import *</span>
-<span class="g g-Whitespace">    </span><span class="mi">404</span><span class="sd"> from .minpack import *</span>
+<span class="g g-Whitespace">    </span><span class="mi">411</span><span class="s2"> from ._nnls import nnls</span>
+<span class="g g-Whitespace">    </span><span class="mi">412</span><span class="s2"> from ._basinhopping import basinhopping</span>
+<span class="ne">--&gt; </span><span class="mi">413</span><span class="s2"> from ._linprog import linprog, linprog_verbose_callback</span>
+<span class="g g-Whitespace">    </span><span class="mi">414</span><span class="s2"> from ._lsap import linear_sum_assignment</span>
+<span class="g g-Whitespace">    </span><span class="mi">415</span><span class="s2"> from ._differentialevolution import differential_evolution</span>
 
-<span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\optimize\_root.py in &lt;module&gt;
-<span class="g g-Whitespace">     </span><span class="mi">17</span><span class="sd"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span><span class="sd"> from .optimize import MemoizeJac, OptimizeResult, _check_unknown_options</span>
-<span class="ne">---&gt; </span><span class="mi">19</span><span class="sd"> from .minpack import _root_hybr, leastsq</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span><span class="sd"> from ._spectral import _root_df_sane</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span><span class="sd"> from . import nonlin</span>
-
-<span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\optimize\minpack.py in &lt;module&gt;
-<span class="g g-Whitespace">     </span><span class="mi">11</span><span class="sd"> from scipy._lib._util import getfullargspec_no_self as _getfullargspec</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span><span class="sd"> from .optimize import OptimizeResult, _check_unknown_options, OptimizeWarning</span>
-<span class="ne">---&gt; </span><span class="mi">13</span><span class="sd"> from ._lsq import least_squares</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span><span class="sd"> # from ._lsq.common import make_strictly_feasible</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span><span class="sd"> from ._lsq.least_squares import prepare_bounds</span>
-
-<span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\optimize\_lsq\__init__.py in &lt;module&gt;
-<span class="g g-Whitespace">      </span><span class="mi">1</span><span class="sd"> &quot;&quot;&quot;</span><span class="n">This</span> <span class="n">module</span> <span class="n">contains</span> <span class="n">least</span><span class="o">-</span><span class="n">squares</span> <span class="n">algorithms</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">----&gt; </span><span class="mi">2</span><span class="s2"> from .least_squares import least_squares</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span><span class="s2"> from .lsq_linear import lsq_linear</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> </span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> __all__ = [&#39;least_squares&#39;, &#39;lsq_linear&#39;]</span>
+<span class="ne">c</span>:\users\admin\anaconda3\envs\causality-booklet\lib\site-packages\scipy\optimize\_linprog.py in &lt;module&gt;
+<span class="g g-Whitespace">     </span><span class="mi">21</span><span class="s2"> from warnings import warn</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span><span class="s2"> from ._linprog_highs import _linprog_highs</span>
+<span class="ne">---&gt; </span><span class="mi">23</span><span class="s2"> from ._linprog_ip import _linprog_ip</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span><span class="s2"> from ._linprog_simplex import _linprog_simplex</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span><span class="s2"> from ._linprog_rs import _linprog_rs</span>
 
 <span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap.py</span> in <span class="ni">_find_and_load</span><span class="nt">(name, import_)</span>
 
 <span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap.py</span> in <span class="ni">_find_and_load_unlocked</span><span class="nt">(name, import_)</span>
 
-<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap.py</span> in <span class="ni">_find_spec</span><span class="nt">(name, path, target)</span>
+<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap.py</span> in <span class="ni">_load_unlocked</span><span class="nt">(spec)</span>
 
-<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">find_spec</span><span class="nt">(cls, fullname, path, target)</span>
+<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">exec_module</span><span class="nt">(self, module)</span>
 
-<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">_get_spec</span><span class="nt">(cls, fullname, path, target)</span>
+<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">get_code</span><span class="nt">(self, fullname)</span>
 
-<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">find_spec</span><span class="nt">(self, fullname, target)</span>
-
-<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">_path_isfile</span><span class="nt">(path)</span>
-
-<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">_path_is_mode_type</span><span class="nt">(path, mode)</span>
-
-<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">_path_stat</span><span class="nt">(path)</span>
+<span class="nn">c:\users\admin\anaconda3\envs\causality-booklet\lib\importlib\_bootstrap_external.py</span> in <span class="ni">get_data</span><span class="nt">(self, path)</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -490,13 +472,13 @@
 </tr>
 </table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
-<p>Based on the get_data function, the first approach is the correct one (we simply multiply X by 3 and then add some noise). However, the data alone cannot tell us which direction is the proper one. Without any assumptions/knowledge about the underlying causal structure, we can only talk about associations, which in case of the linear regression are basically conditional expectations, i.e. $\mathbb{E}[Y|X]$ and $\mathbb{E}[X|Y]$. This gives us the power to answer questions of the nature: “We have observed X, what do we expect to see for Y”, e.g.:</p>
+<p>Based on the get_data function, the first approach is the correct one (we simply multiply X by 3 and then add some noise). However, the data alone cannot tell us which direction is the proper one. Without any assumptions/knowledge about the underlying causal structure, we can only talk about associations, which in case of the linear regression are basically conditional expectations, i.e. <span class="math notranslate nohighlight">\(\mathbb{E}[Y|X]\)</span> and <span class="math notranslate nohighlight">\(\mathbb{E}[X|Y]\)</span>. This gives us the power to answer questions of the nature: “We have observed X, what do we expect to see for Y”, e.g.:</p>
 <ul class="simple">
 <li><p>“A customer x has an income of 10.000 Euro, what would we expect this customer spends on leisure articles?”</p></li>
 <li><p>“We can see it rain, what is the chance that our driveway is wet?”</p></li>
 <li><p>“An applicant for a personal loan works as a teacher, what is the estimated probability that they will default”</p></li>
 </ul>
-<p>In contrast, causality goes beyond merely observing what is happening and tries to infer the concrete impact of one variable onto another one. This would allow us to make statements about what would happen, if we set a variable to a certain value. In the notation developed by Pearl, we would use the do-operator and write: $\mathbb{E}[Y|\text{do}(X)]$ and $\mathbb{E}[X|\text{do}(Y)]$ to differentiate this setting from the classical one, where we just infer associative relationships.</p>
+<p>In contrast, causality goes beyond merely observing what is happening and tries to infer the concrete impact of one variable onto another one. This would allow us to make statements about what would happen, if we set a variable to a certain value. In the notation developed by Pearl, we would use the do-operator and write: <span class="math notranslate nohighlight">\(\mathbb{E}[Y|\text{do}(X)]\)</span> and <span class="math notranslate nohighlight">\(\mathbb{E}[X|\text{do}(Y)]\)</span> to differentiate this setting from the classical one, where we just infer associative relationships.</p>
 <p>Some questions we might be interested in and which tend to have a causal twist to them:</p>
 <ul class="simple">
 <li><p>“What was the concrete impact of calling the customer in their decision to purchase the service?”</p></li>
