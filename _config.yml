@@ -2,3 +2,6 @@ title: "The Small Booklet Of Causality Examples"
 parse:
   myst_enable_extensions:
     - amsmath
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
